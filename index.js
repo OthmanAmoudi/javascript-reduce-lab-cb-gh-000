@@ -25,15 +25,21 @@ const tempArr = [];
 const wordCountMap = monologueLines.reduce((acc,ele) => {
   const numStr = `${ele.split(" ").length}`;
   console.log(numStr);
-  console.log(acc)
+  console.log(acc);
   console.log("---");
   if (acc[numStr]){
+    
     acc[numStr]+=1;
+    
   }else{
+    
     acc[numStr] = 0;
+
   }
+  
   return acc;
-},{});
+
+},0);
 
 console.log(wordCountMap)
 
