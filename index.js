@@ -20,6 +20,20 @@ const monologueLines = [
 const totalBatteries = batteryBatches.reduce((acc,ele) => {
   return acc+=ele;
 });
-console.log(totalBatteries);
+//console.log(totalBatteries);
+const tempArr = [];
+const wordCountMap = monologueLines.reduce((acc,ele) => {
+  const numStr = `${ele.split(" ").length}`;
+  //console.log(ele.split(" ").length);
+  console.log("---");
+  if (tempArr.includes(numStr)){
+    
+  }
+  tempArr.push(numStr);
+  return Object.assign({}, numStr, 'sum');
+});
 
-const wordCountMap = monologueLines.reduce();
+console.log(wordCountMap)
+
+
+
