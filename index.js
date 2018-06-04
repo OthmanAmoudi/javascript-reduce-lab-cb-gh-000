@@ -30,6 +30,7 @@ const wordCountMap = monologueLines.reduce((acc,ele) => {
   //}
   //tempArr.push(numStr);
   //Object.assign({}, numStr);
+  return numStr;
   
 },{});
 
