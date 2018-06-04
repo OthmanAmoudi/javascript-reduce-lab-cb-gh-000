@@ -28,7 +28,7 @@ const wordCountMap = monologueLines.reduce((acc,ele) => {
   console.log("---");
   console.log(acc)
   if (ele in acc){
-    acc["name"]
+    acc.ele
   }
   //tempArr.push(numStr);
   //Object.assign({}, numStr);
