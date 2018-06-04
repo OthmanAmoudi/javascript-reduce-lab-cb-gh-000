@@ -24,13 +24,13 @@ const totalBatteries = batteryBatches.reduce((acc,ele) => {
 const tempArr = [];
 const wordCountMap = monologueLines.reduce((acc,ele) => {
   const numStr = `${ele.split(" ").length}`;
-  //console.log(numStr);
-  console.log("---");
+  console.log(numStr);
   console.log(acc)
-  if (map[numStr]){
-    map[numStr]+=1;
+  console.log("---");
+  if (acc[numStr]){
+    acc[numStr]+=1;
   }else{
-    map[numStr] = 0;
+    acc[numStr] = 0;
   }
   return acc;
 },{});
