@@ -33,7 +33,7 @@ const wordCountMap = monologueLines.reduce((acc,ele) => {
     
   }else{
     
-    acc[numStr] = 0;
+    acc[numStr] += 0;
 
   }
   
