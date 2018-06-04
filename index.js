@@ -39,7 +39,7 @@ const wordCountMap = monologueLines.reduce((acc,ele) => {
   
   return acc;
 
-},0);
+},[{}]);
 
 console.log(wordCountMap)
 
